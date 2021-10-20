@@ -13,39 +13,39 @@
 .music-container {
   background: #555b6e;
   flex-grow: 0;
-  transition: all 2100ms ease;
+  transition: all 1600ms ease;
 }
 
 .dev-container {
   background: #89b0ae;
   flex-grow: 0;
-  transition: all 2100ms ease;
+  transition: all 1600ms ease;
 }
 
 .teach-container {
   background: #a6c5be;
   flex-grow: 0;
-  transition: all 2100ms ease;
+  transition: all 1600ms ease;
 }
 
 .mouse-entered {
   /* cursor: pointer; */
-  animation: expand 2100ms ease;
+  animation: expand 1600ms 100ms ease;
   /* flex-basis: 250%; */
 }
 .mouse-leave {
   flex-basis: 280%;
-  animation: shrink 2100ms ease;
+  animation: shrink 1600ms 100ms ease;
 }
 .expand-section {
   flex-basis: 280%;
-  transform: all 2100ms ease;
+  transform: all 1600ms ease;
   background-color: rgb(61, 61, 61);
 }
 
 .shrink-section {
   flex-basis: 280%;
-  animation: shrink 2100ms ease;
+  animation: shrink 1600ms ease;
 }
 
 @keyframes expand {
@@ -71,6 +71,12 @@
 
 .section--title {
   font-size: 6rem;
+  will-change: translate, scale;
+  transition: transform 2.2s ease;
+}
+
+.title-move {
+  transform: translate(0, -30vh) scale(60%);
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
