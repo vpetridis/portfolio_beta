@@ -61,10 +61,11 @@
 @keyframes shrink {
   0% {
     flex-basis: 280%;
+    background-color: rgb(61, 61, 61);
   }
   100% {
     flex-basis: 100%;
-    /* background-color: rgb(61, 61, 61); */
+    background-color: initial;
   }
 }
 
