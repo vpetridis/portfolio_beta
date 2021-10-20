@@ -36,16 +36,14 @@
 .mouse-leave {
   flex-basis: 280%;
   animation: shrink 2100ms ease;
-
 }
 .expand-section {
   flex-basis: 280%;
   transform: all 2100ms ease;
   background-color: rgb(61, 61, 61);
-
 }
 
-.shrink-section{
+.shrink-section {
   flex-basis: 280%;
   animation: shrink 2100ms ease;
 }
@@ -70,7 +68,9 @@
   }
 }
 
-
 .section--title {
   font-size: 6rem;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
 }
