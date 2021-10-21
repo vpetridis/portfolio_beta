@@ -29,6 +29,7 @@ const Section = ({ children, sectionArea, title, Info }) => {
         mouseEntered && "mouse-entered expand-section"
       }`}
       style={{ flexBasis: mouseLeft && "100%" }}
+      // FIXME onClick should toggle the other refs' state
       onClick={() => setMouseEntered(true)}
     >
       <h5 className={`section--title ${mouseEntered && "title-move"}`}>

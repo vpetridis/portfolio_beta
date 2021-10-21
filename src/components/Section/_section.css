@@ -31,22 +31,22 @@
 
 .mouse-entered {
   /* cursor: pointer; */
-  animation: expand 1600ms 100ms ease;
+  animation: expand 1600ms 200ms ease;
   /* flex-basis: 250%; */
 }
 .mouse-leave {
   flex-basis: 280%;
-  animation: shrink 1600ms 100ms ease;
+  animation: shrink 1600ms 200ms ease;
 }
 .expand-section {
   flex-basis: 280%;
-  transform: all 1600ms ease;
+  transform: all 1600ms 200ms ease;
   background-color: rgb(61, 61, 61);
 }
 
 .shrink-section {
   flex-basis: 280%;
-  animation: shrink 1600ms ease;
+  animation: shrink 1600ms 200ms ease;
 }
 
 @keyframes expand {
@@ -77,16 +77,16 @@
   transition: all 2.2s ease;
   /* opacity: 1; */
   z-index: 100;
+  border-radius: 10px;
+  padding: 0.2rem 2.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .title-move {
   transform: translate(-20vw, -39vh) scale(60%);
   background-color: rgba(197, 197, 197, 0.651);
   color: rgb(61, 61, 61);
-  border-radius: 16px;
-  padding: 1rem 5rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
