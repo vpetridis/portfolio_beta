@@ -1,17 +1,20 @@
 import "./App.css";
+import Info from "./components/Info";
 import Section from "./components/Section";
 
 function App() {
   return (
     <div className="App">
       <Section sectionArea="music-container" title="music">
-        I am a music composer
+        <Info />
       </Section>
       <Section sectionArea="teach-container" title="teach">
-        I am a former teacher
+        {" "}
+        <Info />
       </Section>
       <Section sectionArea="dev-container" title="dev">
-        I am a front-end developer
+        {" "}
+        <Info />
       </Section>
     </div>
   );

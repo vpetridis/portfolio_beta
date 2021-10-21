@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./_section.css";
 
-const Section = ({ children, sectionArea, title }) => {
+const Section = ({ children, sectionArea, title, Info }) => {
   const ref = useRef();
   const [mouseEntered, setMouseEntered] = useState();
   const [mouseLeft, setMouseLeft] = useState();
@@ -23,18 +23,19 @@ const Section = ({ children, sectionArea, title }) => {
   }, [ref]);
 
   return (
-    <div
+    <section
       ref={ref}
       className={`section-container ${sectionArea} ${
         mouseEntered && "mouse-entered expand-section"
       }`}
       style={{ flexBasis: mouseLeft && "100%" }}
+      onClick={() => setMouseEntered(true)}
     >
       <h5 className={`section--title ${mouseEntered && "title-move"}`}>
         {title}
       </h5>
-      {children}
-    </div>
+      {mouseEntered && children}
+    </section>
   );
 };
 

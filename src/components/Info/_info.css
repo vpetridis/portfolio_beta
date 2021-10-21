@@ -1,0 +1,27 @@
+.info-container {
+  width: 60%;
+  /* margin: 10em; */
+  height: 80vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  will-change: opacity, transform;
+  animation: show-container 2100ms ease-out;
+  transform: translateY(8vh);
+  opacity: 1;
+  z-index: 99;
+}
+
+@keyframes show-container {
+  0% {
+    transform: translateY(150vh);
+    opacity: 0;
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(8vh);
+    opacity: 1;
+  }
+}
